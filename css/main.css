@@ -1,0 +1,380 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+@font-face {
+  font-family: 'Vela Sans';
+  src: url('../fonts/VelaSans-Regular.ttf');
+  src: local('/'), local('EuclidSquare-Light'),
+    url('../fonts/VelaSans-Bold.ttf') format('truetype'),
+    url('../fonts/VelaSans-ExtraBold.ttf') format('truetype'),
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 4vw;
+}
+
+.navbar h2 {
+  padding-left: 2vw;
+  font-family: "Vela Sans";
+  font-style: normal;
+  font-size: 1vw;
+}
+
+.prototype_11 {
+  margin: auto;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+
+.but {
+  font-family: "Vela Sans";
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.476vw 0.893vw;
+  font-size: 1.3vw;
+  position: static;
+  width: 14vw;
+  height: 3vw;
+
+
+  /* System/Deep Green */
+
+  background: #41EF3E;
+  border-radius: 0.5vw;
+  border: none;
+
+}
+
+.info {
+  padding-left: 10vw;
+}
+
+.but:hover {
+  background: #fff;
+  border: 0.119vw black solid;
+  transition: 0.3s;
+}
+
+h1 {
+  font-family: 'Vela Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.810vw;
+  line-height: 143%;
+  /* identical to box height, or 92px */
+
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+}
+
+.text p {
+  width: 28vw;
+  font-family: 'Vela Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.429vw;
+  line-height: 1.964vw;
+  padding-bottom: 1vw;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.about {
+  padding-top: 14vw;
+  width: 26vw;
+}
+h3 {
+  font-family: 'Vela Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.429vw;
+  line-height: 2vw;
+  padding-bottom: 0.5vw;
+}
+
+.about p {
+  font-family: 'Vela Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.833vw;
+  line-height: 1.190vw;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.deepface1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.deepface2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.deepface3 {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 16%;
+
+}
+
+.deepface4 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.frame {
+  position: relative;
+  margin: 20px auto;
+  width: 520px;
+  height: 720px;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  box-shadow: 0px 0px 40px rgba(62, 62, 62, 0.3);
+  /* border-radius: 2%; */
+}
+
+.hat {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 70%;
+}
+
+.eyeBrows {
+  position: absolute;
+  top: 8%;
+  left: 12%;
+  width: 75%;
+}
+
+.eyeBrowsSm {
+  position: absolute;
+  top: 40%;
+  left: 22.5%;
+  width: 55%;
+}
+
+.eyes {
+  position: absolute;
+  top: 24%;
+  left: 7.5%;
+  width: 85%;
+}
+
+.eyesSm {
+  position: absolute;
+  top: 52%;
+  left: 22.5%;
+  width: 55%;
+}
+
+.nose {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  width: 50%;
+}
+
+.noseSm {
+  position: absolute;
+  top: 62%;
+  left: 35%;
+  width: 30%;
+}
+
+.mouth {
+  position: absolute;
+  bottom: 12%;
+  left: 27%;
+  width: 46%;
+}
+
+.mouthSm {
+  position: absolute;
+  bottom: 6%;
+  left: 36%;
+  width: 28%;
+}
+
+.itemRight {
+  position: absolute;
+  bottom: 0%;
+  width: 60%;
+  right: -25%;
+}
+
+.itemLeft {
+  position: absolute;
+  bottom: 0%;
+  width: 60%;
+  left: -25%;
+}
+
+.face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.circle {
+  position: absolute;
+  background-size: cover;
+  transform: rotate(0);
+  opacity: 0;
+  transition: all 3.1s;
+}
+
+@keyframes df {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.deepface {
+  position: absolute;
+  background-size: cover;
+  animation: df 3s ease-out;
+}
+
+@media screen and (max-width: 1440px) {
+  .frame {
+    width: 520px;
+    height: 720px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .frame {
+    width: 420px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+
+  .info {
+    padding-left: 0vw;
+  }
+  
+  .prototype_11 {
+    height: 140vh;
+  }
+  .frame {
+    width: 420px;
+    height: 600px;
+  }
+
+  .navbar {
+    padding-top: 2vw;
+  }
+
+  .text {
+    padding-bottom: 0vw;
+  }
+
+  .prototype_11 {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 9vw;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+    width: 65vw;
+    padding-bottom: 4vw;
+    line-height: 100%;
+  }
+
+  .text p {
+    font-size: 4vw;
+    width: 65vw;
+    padding-bottom: 4vw;
+    line-height: 100%;
+  }
+
+  .about p {
+    font-size: 2.8vw;
+    width: 65vw;
+    padding-bottom: 4vw;
+    line-height: 100%;
+  }
+
+  .but {
+    font-size: 4vw;
+    padding: 0.476vw 0.893vw;
+    position: static;
+    width: 40vw;
+    height: 8vw;
+
+
+    /* System/Deep Green */
+
+    background: #41EF3E;
+    border-radius: 2vw;
+    border: none;
+
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .frame {
+    width: 400px;
+    height: 540px;
+  }
+
+  .text {
+    padding-bottom: 2vw;
+  }
+
+  .prototype_11 {
+    flex-direction: column;
+    height: 110vh;
+  }
+
+  h1 {
+    font-size: 9vw;
+    padding-top: 10vw;
+    padding-bottom: 4vw;
+  }
+
+  p {
+    font-size: 4vw;
+    width: 65vw;
+    padding-bottom: 4vw;
+    line-height: 100%;
+  }
+
+  .but {
+    font-size: 4vw;
+    padding: 0.476vw 0.893vw;
+    position: static;
+    width: 40vw;
+    height: 8vw;
+
+
+    /* System/Deep Green */
+
+    background: #41EF3E;
+    border-radius: 2vw;
+    border: none;
+
+  }
+}
